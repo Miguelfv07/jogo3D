@@ -38,10 +38,12 @@ public class PlayerMov : MonoBehaviour
             animator.SetBool("Andar", false);
         }
         float moveInput = Input.GetAxis("Horizontal");
+        float moveInputZ = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector3(moveInput * speed, rb.velocity.y);
 
-        rb.velocity = new Vector3(moveInput * speed, rb.velocity.y);
+        rb.velocity = new Vector3(moveInput * speed, rb.velocity.y, moveInputZ);
+
+       // rb.velocity = new Vector3(moveInput * speed, rb.velocity.y);
 
 
 
