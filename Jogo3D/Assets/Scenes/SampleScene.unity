@@ -184,7 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f1cd140804a144caab130e7ac120c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  velocidadeRotacao: 10
+  speed: 530
   jumpForce: 10
   animator: {fileID: 122435191}
 --- !u!54 &122435196
@@ -228,6 +229,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b3755958dcbdc9a4abaabb002797940b, type: 3}
       propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3755958dcbdc9a4abaabb002797940b, type: 3}
+      propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b3755958dcbdc9a4abaabb002797940b, type: 3}
@@ -587,7 +592,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 999890201}
   - {fileID: 963194228}
+  - {fileID: 999890201}
   - {fileID: 705507995}
   - {fileID: 575034600}
